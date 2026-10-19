@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let tiro = parseInt(prompt("qiyaas tiro "))
+        let checkWrong = 1
+        while (tiro !== 15) {
+            let tiro = parseInt(prompt("qiyaas tiro "))
+            if (tiro == 15) {
+                console.log("waad guulaysatay")
+                break
+
+            }
+            if (tiro < 15) {
+                console.log("wuu hooseeyaa")
+            } else {
+                console.log("wuu sarreeyaa")
+            }
+            checkWrong++
+            if (checkWrong == 5) {
+                break
+            }
+        }
+        console.log(`inta jeer ee uu soo wareegsaday waa ${checkWrong}`)
+    </script>
+</body>
+
+</html>
